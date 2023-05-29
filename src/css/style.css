@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Comme:wght@100;200&family=Indie+Flower&family=Pacifico&family=Satisfy&family=Source+Sans+Pro:wght@200;300&display=swap");
 
 
-/*===== VARIABLES CSS =====*/
+/*===== VARIAVEIS CSS =====*/
 :root{
     --header-height: 3rem;
     --font-medium: 500;
 }
 
-/*===== Colores =====*/
+/*===== Cores =====*/
 :root{
     --first-color: #a32562;
     --white-color: #c54771;
@@ -17,29 +17,29 @@
     --text-color: #697477;
 }
 
-/*===== Fuente y tipografia =====*/
+/*===== Fonte =====*/
 :root{
-    --body-font:'Pacifico';
-    --big-font-size: 6.25rem;
-    --h2-font-size: 1.25rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
+    --body-font:'Indie Flower, curve';
+    --big-font-size: 100px;
+    --h2-font-size: 20px;
+    --normal-font-size: 15px;
+    --small-font-size: 13.px;
 }
 @media screen and (min-width: 768px){
     :root{
-        --big-font-size: 10.5rem;
-        --h2-font-size: 2rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
+        --big-font-size: 168px;
+        --h2-font-size: 32px;
+        --normal-font-size: 16px;
+        --small-font-size: 14px;
     }
 }
 
-/*===== Margenes =====*/
+/*===== Margens =====*/
 :root{
-    --mb-1: .5rem;
-    --mb-2: 1rem;
-    --mb-3: 1.5rem;
-    --mb-4: 2rem;
+    --mb-1: 8px;
+    --mb-2: 16px;
+    --mb-3: 24px;
+    --mb-4: 32px;
 }
 
 /*===== z index =====*/
@@ -47,7 +47,7 @@
     --z-fixed: 100;
 }
 
-/*===== BASE =====*/
+/*===== base =====*/
 *,::before,::after{
     box-sizing: border-box;
 }
@@ -80,7 +80,7 @@ img{
     display: block;
 }
 
-/*===== CLASS CSS ===== */
+/*===== class ===== */
 .section{
     padding: 5rem 0;
 }
@@ -103,7 +103,7 @@ img{
     background-color: var(--first-color);
 }
 
-/*===== LAYOUT =====*/
+/*===== port =====*/
 .bd-grid{
     max-width: 1024px;
     display: grid;
@@ -122,8 +122,9 @@ img{
     z-index: var(--z-fixed);
 }
 
-/*===== NAV =====*/
+/*===== nav bar =====*/
 .nav{
+    font-family: var(--body-font);
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
@@ -136,7 +137,7 @@ img{
         right: -100%;
         width: 80%;
         height: 100%;
-        padding: 2rem;
+        padding: 32px;
         background-color: rgba(255,255,255,.3);
         transition: .5s;
         backdrop-filter: blur(10px);
@@ -157,16 +158,16 @@ img{
 }
 .nav__toggle{
     color: var(--white-color);
-    font-size: 1.5rem;
+    font-size: 24px;
     cursor: pointer;
 }
 
-/*=== Show menu ===*/
+/*=== show menu ===*/
 .show{
     right: 0;
 }
 
-/*Active menu*/
+/*=== active menu ===*/
 .active::after{
     position: absolute;
     content: "";
@@ -177,7 +178,7 @@ img{
     background-color: var(--first-color);
 }
 
-/*===== HOME =====*/
+/*===== home =====*/
 .home{
     padding-top: 50px;
     background-image: url(./img/bgskills.jpg);
@@ -215,9 +216,9 @@ img{
     width: 295px;
 }
 
-/* ===== ABOUT =====*/
+/* ===== about =====*/
 .about{
-    background-image: url(./img/bgupanddown.png);
+    background-image: url();
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -266,9 +267,9 @@ img{
     color: var(--first-color);
 }
 
-/* ===== SKILLS =====*/
+/* ===== skills =====*/
 .skills{
-    background-image: url(./img/bgskills.jpg);
+    background-image: url();
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -338,7 +339,7 @@ img{
     border-radius: .5rem;
   }
 
-/* ===== PORTFOLIO =====*/
+/* ===== port =====*/
 .portfolio{
     background-color: var(--white-color);
 }
@@ -374,9 +375,9 @@ img{
     color: var(--dark-color);
 }
 
-/* ===== CONTACT =====*/
+/* ===== contact =====*/
 .contact{
-    background-image: url(./img/bgskills.jpg);
+    background-image: url();
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -418,7 +419,7 @@ img{
     cursor: pointer;
 }
 
-/* ===== FOOTER=====*/
+/* ===== footer =====*/
 .footer{
     background-color: var(--dark-color);
 }
@@ -444,8 +445,7 @@ img{
     color: var(--first-color);
 }
 
-/* ===== MEDIA QUERIES =====*/
-/* For small devices */
+/* ===== media =====*/
 @media screen and (max-width: 320px) {
   .home__img {
     width: 230px;
@@ -546,13 +546,12 @@ img{
     }
 }
 
-/* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
     .home__container {
         height: 640px;
     }
     .home__img {
         width: 500px;
-        right: 24%;
+        right: 20%;
     }
 }
